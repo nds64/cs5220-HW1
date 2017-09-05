@@ -1,9 +1,14 @@
 .PHONY: all clean
 
-all: hello
+all: hello \
+		 mystery-valentine
 
 hello: hello.c
 	gcc -o hello hello.c
 
+mystery-valentine: mystery-valentine.c
+	gcc -o mystery-valentine mystery-valentine.c
+
 clean:
-	rm -f hello 
+	rm -f hello
+	rm -f mystery-valentine
